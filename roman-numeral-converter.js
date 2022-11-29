@@ -1,4 +1,10 @@
-function convertToRoman(num) {
+function convertToRoman() {
+
+  let number = document.getElementById('number')
+  let answer = document.getElementById('answer')
+  let numAns =  Number(number.value);
+  let num = Number(number.value);
+  
   let romanNumeral = "";
   
   while ( num > 0) {
@@ -41,15 +47,10 @@ function convertToRoman(num) {
     } else if (num >= 1000 && num <= 3999) {
       romanNumeral += "M"
       num -= 1000
-    }
-     
-     
-     else {
+    } else {
       num -= 1
     }
      
   }
-  return romanNumeral ;
+  return answer.innerHTML = `The equivalent value of ${numAns} in roman numerals is ${romanNumeral}.`;
 }
-
-console.log(convertToRoman(3999)); 
