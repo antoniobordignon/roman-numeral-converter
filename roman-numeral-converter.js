@@ -54,6 +54,7 @@ function convertToRoman() {
       }
     }
   }
+  number.value = ''
   answer.innerHTML = ''
   answer.innerHTML += `The equivalent value of ${numAns} in Roman numerals is`; 
   answer.innerHTML += `<h3>${romanNumeral}</h3>`;
